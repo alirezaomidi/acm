@@ -5,8 +5,6 @@
  */
 
 #include <fstream>
-#include <map>
-#include <string>
 using namespace std;
 
 int numbers[3500][7]; // for all numbers from 1 to 3499: count of Is, Vs, Xs, etc.

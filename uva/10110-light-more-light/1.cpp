@@ -29,7 +29,23 @@ const int inf = 1e9;
 int main() {
 	ios::sync_with_stdio(false);
 
-
+    ll n;
+    while (cin >> n) {
+        if (n == 0) break;
+        ll sqr = sqrt(n) + 1;
+        bool square = false;
+        for (ll i = 2; i <= sqr; i++) {
+            if (i * i == n) {
+                square = true;
+                break;
+            }
+        }
+        if (square || n == 1) {
+            cout << "yes" << endl;
+        } else {
+            cout << "no" << endl;
+        }
+    }
 
 	return 0;
 }

@@ -23,6 +23,7 @@ typedef vector<iii> viii;
 typedef vector<vii> vvii;
 typedef set<int> si;
 typedef vector<si> vsi;
+typedef pair<double, double> dd;
 
 const int inf = 1e9;
 

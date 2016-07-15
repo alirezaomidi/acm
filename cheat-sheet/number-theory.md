@@ -176,7 +176,7 @@ ll EulerPhi(ll n) {
         while (n % PF == 0) n /= PF;
         PF = primes[++PF_idx];
     }
-    if (n != 1) ans -= ans / N;
+    if (n != 1) ans -= ans / n;
     return ans;
 }
 ```

@@ -121,7 +121,7 @@ int value(int id, int w) {
 // inside main():
 W.resize(n + 1, 0);
 V.resize(n + 1, 0);
-memo.resize(n + 1, vi(MW, 0));
+memo.resize(n + 1, vi(MW + 1, -1));
 
 // the answer is in value(0, MW); MW = size of knapsack
 ```
@@ -138,7 +138,7 @@ vi W(n + 1, 0), V(n + 1, 0);
 
 // input W and V
 
-vvi dp(n + 1, vi(MW, 0)); // dp is used to memorize the states
+vvi dp(n + 1, vi(MW + 1, -1)); // dp is used to memorize the states
 for (i = 0; i <= N;  i++) dp[i][0] = 0;
 for (w = 0; w <= MW; w++) dp[0][w] = 0;
 
